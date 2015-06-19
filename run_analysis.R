@@ -47,15 +47,13 @@ newColNames <- gsub("\\.\\.", ".", newColNames)
 newColNames <- gsub("BodyBody", "Body", newColNames)
 
 finalData <- data.frame()
-#finalData <- cbind(unique(subsetData$Subject), )
-#finalData <- subsetData[unique(subsetData$Subject),1:2]
 for(i in unique(subsetData$Subject)) {  # Cycles through the unique subject numbers
-    for (j in unique(subsetData$Activity_Label)) {  # Cycles through the unique activity numbers
+    for (j in unique(subsetData$Activity)) {  # Cycles through the unique activity numbers
         rowData <- vector()
         rowData[1] <- i
         rowData[2] <- j
         for (k in 3:length(subsetData)) {  # Cycles through the columns of measurements
-            tmp <- subsetData[which(subsetData$Subject == i & subsetData$Activity_Label == j), k]
+            tmp <- subsetData[which(subsetData$Subject == i & subsetData$Activity == j), k]
             rowData[k] <- mean(tmp)
         }
         finalData <- rbind(finalData, rowData)
@@ -70,7 +68,7 @@ colnames(finalData) <- newColNames
 
 # Replaces the activity numbers with their respective descriptive terms
 for (i in 1:6) {
-    finalData$Activity_Label[finalData$Activity_Label == i] <- activityLabels[i, 2]
+    finalData$Activity[finalData$Activity == i] <- activityLabels[i, 2]
 }
 
 # Create txt file of data with write.table() using row.name=FALSE

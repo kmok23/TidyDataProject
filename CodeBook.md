@@ -14,73 +14,282 @@ The readme describes the transformations performed to convert the raw data into 
 The codebook describes the meaning of each column in the tidy data set. 
 
 Subject
-Activity.Label
+    ID of subject who carried out the experiment
+        1..30 Integer ID of subject
+    
+Activity
+    Activity that was performed during the experiment
+        1 Walking
+        2 Walking upstairs
+        3 Walking downstairs
+        4 Sitting
+        5 Standing
+        6 Laying
+
 Mean.of.tBodyAcc.mean.X
+    Average of the mean body acceleration signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAcc.mean.Y
+    Average of the mean body acceleration signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAcc.mean.Z
+    Average of the mean body acceleration signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAcc.std.X
+    Average of the standard deviation in body acceleration signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAcc.std.Y
+    Average of the standard deviation in body acceleration signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAcc.std.Z
+    Average of the standard deviation in body acceleration signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.mean.X
+    Average of the mean gravity acceleration signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.mean.Y
+    Average of the mean gravity acceleration signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.mean.Z
+    Average of the mean gravity acceleration signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.std.X
+    Average of the standard deviation in gravity acceleration signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.std.Y
+    Average of the standard deviation in gravity acceleration signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAcc.std.Z
+    Average of the standard deviation in gravity acceleration signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.mean.X
+    Average of the mean body jerk signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.mean.Y
+    Average of the mean body jerk signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.mean.Z
+    Average of the mean body jerk signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.std.X
+    Average of the standard deviation in body jerk signal in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.std.Y
+    Average of the standard deviation in body jerk signal in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerk.std.Z
+    Average of the standard deviation in body jerk signal in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.mean.X
+    Average of the mean body angular velocity in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.mean.Y
+    Average of the mean body angular velocity in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.mean.Z
+    Average of the mean body angular velocity in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.std.X
+    Average of the standard deviation in body angular velocity in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.std.Y
+    Average of the standard deviation in body angular velocity in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyro.std.Z
+    Average of the standard deviation in body angular velocity in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerk.mean.X
+    Average of the mean body angular jerk in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerk.mean.Y
+    Average of the mean body angular jerk in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerk.mean.Z
+    Average of the mean body angular jerk in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerk.std.X
+    Average of the standard deviation in body angular jerk in X-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerk.std.Y
+    Average of the standard deviation in body angular jerk in Y-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+    
 Mean.of.tBodyGyroJerk.std.Z
+    Average of the standard deviation in body angular jerk in Z-axis in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccMag.mean.
+    Average of the mean magnitude of body acceleration signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccMag.std.
+    Average of the standard deviation in magnitude of body acceleration signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAccMag.mean.
+    Average of the mean magnitude of gravity acceleration signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tGravityAccMag.std.
+    Average of the standard deviation in magnitude of gravity acceleration signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerkMag.mean.
+    Average of the mean magnitude of body jerk signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyAccJerkMag.std.
+    Average of the standard deviation in magnitude of body jerk signal in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroMag.mean.
+    Average of the mean magnitude of body angular velocity in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroMag.std.
+    Average of the standard deviation in magnitude of body angular velocity in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerkMag.mean.
+    Average of the mean magnitude of body angular jerk in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.tBodyGyroJerkMag.std.
+    Average of the standard deviation in magnitude of body angular jerk in time domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.mean.X
+    Average of the mean body acceleration signal in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.mean.Y
+    Average of the mean body acceleration signal in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.mean.Z
+    Average of the mean body acceleration signal in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.std.X
+    Average of the standard deviation in body acceleration signal in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.std.Y
+    Average of the standard deviation in body acceleration signal in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAcc.std.Z
+    Average of the standard deviation in body acceleration signal in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.mean.X
+    Average of the mean in body jerk signal in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.mean.Y
+    Average of the mean in body jerk signal in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.mean.Z
+    Average of the mean in body jerk signal in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.std.X
+    Average of the standard deviation in body jerk signal in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.std.Y
+    Average of the standard deviation in body jerk signal in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerk.std.Z
+    Average of the standard deviation in body jerk signal in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.mean.X
+    Average of the mean in body angular velocity in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.mean.Y
+    Average of the mean in body angular velocity in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.mean.Z
+    Average of the mean in body angular velocity in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.std.X
+    Average of the standard deviation in body angular velocity in X-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.std.Y
+    Average of the standard deviation in body angular velocity in Y-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyro.std.Z
+    Average of the standard deviation in body angular velocity in Z-axis in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccMag.mean.
+    Average of the mean magnitude of body acceleration signal in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccMag.std.
+    Average of the standard deviation in magnitude of body acceleration signal in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerkMag.mean.
+    Average of the mean magnitude of body jerk signal in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyAccJerkMag.std.
+    Average of the standard deviation in magnitude of body jerk signal in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyroMag.mean.
+    Average of the mean magnitude of body angular velocity in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyroMag.std.
+    Average of the standard deviation in magnitude of body angular velocity in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyroJerkMag.mean.
+    Average of the mean magnitude of body angular jerk in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 Mean.of.fBodyGyroJerkMag.std.
+    Average of the standard deviation in magnitude of body angular jerk in frequency domain
+        -1..1 Normalized and bounded within [-1, 1]
+        
 
 
 
