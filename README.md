@@ -145,7 +145,7 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-##Creating the tidy data
+###Creating the tidy data
 
 1. The original dataset was downloaded from the URL provided.
 2. The subject ID, activity ID, and measurements vector were brought together
@@ -169,10 +169,3 @@ readable activity description.
 9. The tidy data is written to a file named "finalData.txt" using write.table.
 10. write.table is also used to create a file "variablesForCodebook.md" that 
 contain all of the variable names.
-
-
-###Download
-###Clean
-###Create
-###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
